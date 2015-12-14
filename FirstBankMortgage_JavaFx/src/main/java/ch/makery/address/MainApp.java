@@ -36,13 +36,14 @@ public class MainApp extends Application {
      * Constructor
      */
     public MainApp() {
-
+    	ArrayList<RateDomainModel> getRates = RateDAL.getRateDomainModel();
     }
 
 
 
     @Override
     public void start(Stage primaryStage) {
+    	
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle("FirstBankMortgage");
         
@@ -51,7 +52,7 @@ public class MainApp extends Application {
 
         initRootLayout();
 
-        showPersonOverview();
+        showMortgageOverview();
     }
 
     /**
@@ -84,15 +85,15 @@ public class MainApp extends Application {
     /**
      * Shows the person overview inside the root layout.
      */
-    public void showPersonOverview() {
+    public void showMortgageOverview() {
         try {
             // Load person overview.
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MainApp.class.getResource("view/PersonOverview.fxml"));
-            AnchorPane personOverview = (AnchorPane) loader.load();
+            loader.setLocation(MainApp.class.getResource("view/Mortgage.fxml"));
+            AnchorPane MortgageOverview = (AnchorPane) loader.load();
 
             // Set person overview into the center of root layout.
-            rootLayout.setCenter(personOverview);
+            rootLayout.setCenter(MortgageOverview);
 
             // Give the controller access to the main app.
             MortgageController controller = loader.getController();

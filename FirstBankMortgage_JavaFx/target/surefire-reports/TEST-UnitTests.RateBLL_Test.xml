@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="3" failures="0" name="UnitTests.RateBLL_Test" time="5.571" errors="2" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_45\jre\bin"/>
+    <property name="java.vm.version" value="25.45-b02"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Andrew\git\FinalExamStarter_5\FirstBankMortgage_JavaFx"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Andrew\git\FinalExamStarter_5\FirstBankMortgage_JavaFx"/>
+    <property name="java.runtime.version" value="1.8.0_45-b15"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_45\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Andrew\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 8.1"/>
+    <property name="classworlds.conf" value="C:\Users\Andrew\MarsJ2SE\Final Coding Project_2\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf495761512958029496.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_45\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_66/bin/server;C:/Program Files/Java/jre1.8.0_66/bin;C:/Program Files/Java/jre1.8.0_66/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\MATLAB\R2015a\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\eclipse;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.3"/>
+    <property name="user.home" value="C:\Users\Andrew"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="Andrew"/>
+    <property name="java.class.path" value="/C:/Program Files/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.6.0.20150526-2031/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_45\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B jfx:jar"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_45"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_45\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_45\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\Andrew\git\FinalExamStarter_5\FirstBankMortgage_JavaFx\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="UnitTests.RateBLL_Test" name="output_test" time="0.022"/>
+  <testcase classname="UnitTests.RateBLL_Test" name="mortgageCalc_Test" time="5.376">
+    <error message="org.hibernate.Session.close()V" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: org.hibernate.Session.close()V
+	at base.RateDAL.getRateDomainModel(RateDAL.java:43)
+	at base.RateDAL.getRate(RateDAL.java:55)
+	at ch.makery.address.model.Rate.getPayment(Rate.java:28)
+	at UnitTests.RateBLL_Test.mortgageCalc_Test(RateBLL_Test.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>1432
+16:51:35.770 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+16:51:35.837 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -&gt; org.hibernate.type.BooleanType@51efea79
+16:51:35.838 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -&gt; org.hibernate.type.BooleanType@51efea79
+16:51:35.838 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -&gt; org.hibernate.type.BooleanType@51efea79
+16:51:35.843 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -&gt; org.hibernate.type.NumericBooleanType@9629756
+16:51:35.848 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration true_false -&gt; org.hibernate.type.TrueFalseType@d2cc05a
+16:51:35.852 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -&gt; org.hibernate.type.YesNoType@1753acfe
+16:51:35.859 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -&gt; org.hibernate.type.ByteType@675d3402
+16:51:35.860 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -&gt; org.hibernate.type.ByteType@675d3402
+16:51:35.861 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -&gt; org.hibernate.type.ByteType@675d3402
+16:51:35.864 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration character -&gt; org.hibernate.type.CharacterType@7823a2f9
+16:51:35.865 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char -&gt; org.hibernate.type.CharacterType@7823a2f9
+16:51:35.865 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -&gt; org.hibernate.type.CharacterType@7823a2f9
+16:51:35.871 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -&gt; org.hibernate.type.ShortType@6767c1fc
+16:51:35.871 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -&gt; org.hibernate.type.ShortType@6767c1fc
+16:51:35.878 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -&gt; org.hibernate.type.ShortType@6767c1fc
+16:51:35.882 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration integer -&gt; org.hibernate.type.IntegerType@cb5822
+16:51:35.883 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration int -&gt; org.hibernate.type.IntegerType@cb5822
+16:51:35.883 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -&gt; org.hibernate.type.IntegerType@cb5822
+16:51:35.891 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -&gt; org.hibernate.type.LongType@224edc67
+16:51:35.892 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -&gt; org.hibernate.type.LongType@224edc67
+16:51:35.893 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -&gt; org.hibernate.type.LongType@224edc67
+16:51:35.901 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -&gt; org.hibernate.type.FloatType@61832929
+16:51:35.901 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -&gt; org.hibernate.type.FloatType@61832929
+16:51:35.902 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -&gt; org.hibernate.type.FloatType@61832929
+16:51:35.907 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -&gt; org.hibernate.type.DoubleType@ae45eb6
+16:51:35.907 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -&gt; org.hibernate.type.DoubleType@ae45eb6
+16:51:35.908 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -&gt; org.hibernate.type.DoubleType@ae45eb6
+16:51:35.915 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -&gt; org.hibernate.type.BigDecimalType@42d80b78
+16:51:35.916 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -&gt; org.hibernate.type.BigDecimalType@42d80b78
+16:51:35.920 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -&gt; org.hibernate.type.BigIntegerType@91161c7
+16:51:35.920 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -&gt; org.hibernate.type.BigIntegerType@91161c7
+16:51:35.926 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration string -&gt; org.hibernate.type.StringType@7cd62f43
+16:51:35.926 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -&gt; org.hibernate.type.StringType@7cd62f43
+16:51:35.929 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nstring -&gt; org.hibernate.type.StringNVarcharType@7d9d1a19
+16:51:35.932 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -&gt; org.hibernate.type.CharacterNCharType@343f4d3d
+16:51:35.936 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration url -&gt; org.hibernate.type.UrlType@4667ae56
+16:51:35.937 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -&gt; org.hibernate.type.UrlType@4667ae56
+16:51:35.944 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration date -&gt; org.hibernate.type.DateType@f6c48ac
+16:51:35.944 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -&gt; org.hibernate.type.DateType@f6c48ac
+16:51:35.950 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration time -&gt; org.hibernate.type.TimeType@3c0ecd4b
+16:51:35.950 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -&gt; org.hibernate.type.TimeType@3c0ecd4b
+16:51:35.956 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -&gt; org.hibernate.type.TimestampType@42dafa95
+16:51:35.957 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -&gt; org.hibernate.type.TimestampType@42dafa95
+16:51:35.957 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -&gt; org.hibernate.type.TimestampType@42dafa95
+16:51:35.962 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -&gt; org.hibernate.type.DbTimestampType@59ec2012
+16:51:35.967 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar -&gt; org.hibernate.type.CalendarType@7085bdee
+16:51:35.968 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -&gt; org.hibernate.type.CalendarType@7085bdee
+16:51:35.968 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -&gt; org.hibernate.type.CalendarType@7085bdee
+16:51:35.971 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -&gt; org.hibernate.type.CalendarDateType@6fd02e5
+16:51:35.976 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration locale -&gt; org.hibernate.type.LocaleType@3f49dace
+16:51:35.976 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -&gt; org.hibernate.type.LocaleType@3f49dace
+16:51:35.981 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration currency -&gt; org.hibernate.type.CurrencyType@72d818d1
+16:51:35.982 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -&gt; org.hibernate.type.CurrencyType@72d818d1
+16:51:35.988 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timezone -&gt; org.hibernate.type.TimeZoneType@cb644e
+16:51:35.990 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -&gt; org.hibernate.type.TimeZoneType@cb644e
+16:51:35.997 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration class -&gt; org.hibernate.type.ClassType@ff5b51f
+16:51:36.000 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -&gt; org.hibernate.type.ClassType@ff5b51f
+16:51:36.009 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -&gt; org.hibernate.type.UUIDBinaryType@5649fd9b
+16:51:36.013 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -&gt; org.hibernate.type.UUIDBinaryType@5649fd9b
+16:51:36.017 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -&gt; org.hibernate.type.UUIDCharType@5025a98f
+16:51:36.021 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration pg-uuid -&gt; org.hibernate.type.PostgresUUIDType@64bf3bbf
+16:51:36.026 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration binary -&gt; org.hibernate.type.BinaryType@6e1ec318
+16:51:36.027 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -&gt; org.hibernate.type.BinaryType@6e1ec318
+16:51:36.029 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [B -&gt; org.hibernate.type.BinaryType@6e1ec318
+16:51:36.034 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -&gt; org.hibernate.type.WrapperBinaryType@2038ae61
+16:51:36.035 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -&gt; org.hibernate.type.WrapperBinaryType@2038ae61
+16:51:36.036 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -&gt; org.hibernate.type.WrapperBinaryType@2038ae61
+16:51:36.040 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration image -&gt; org.hibernate.type.ImageType@71318ec4
+16:51:36.046 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration characters -&gt; org.hibernate.type.CharArrayType@66480dd7
+16:51:36.047 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char[] -&gt; org.hibernate.type.CharArrayType@66480dd7
+16:51:36.049 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [C -&gt; org.hibernate.type.CharArrayType@66480dd7
+16:51:36.055 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -&gt; org.hibernate.type.CharacterArrayType@4fe3c938
+16:51:36.056 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -&gt; org.hibernate.type.CharacterArrayType@4fe3c938
+16:51:36.057 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -&gt; org.hibernate.type.CharacterArrayType@4fe3c938
+16:51:36.063 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration text -&gt; org.hibernate.type.TextType@6fc6f14e
+16:51:36.068 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ntext -&gt; org.hibernate.type.NTextType@4e9ba398
+16:51:36.092 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration blob -&gt; org.hibernate.type.BlobType@369f73a2
+16:51:36.093 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -&gt; org.hibernate.type.BlobType@369f73a2
+16:51:36.096 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -&gt; org.hibernate.type.MaterializedBlobType@7791a895
+16:51:36.117 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration clob -&gt; org.hibernate.type.ClobType@2758fe70
+16:51:36.118 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -&gt; org.hibernate.type.ClobType@2758fe70
+16:51:36.136 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nclob -&gt; org.hibernate.type.NClobType@3224f60b
+16:51:36.136 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -&gt; org.hibernate.type.NClobType@3224f60b
+16:51:36.139 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -&gt; org.hibernate.type.MaterializedClobType@6737fd8f
+16:51:36.141 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -&gt; org.hibernate.type.MaterializedNClobType@68bbe345
+16:51:36.146 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration serializable -&gt; org.hibernate.type.SerializableType@9660f4e
+16:51:36.159 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration object -&gt; org.hibernate.type.ObjectType@694e1548
+16:51:36.160 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -&gt; org.hibernate.type.ObjectType@694e1548
+16:51:36.162 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -&gt; org.hibernate.type.AdaptedImmutableType@26aa12dd
+16:51:36.163 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -&gt; org.hibernate.type.AdaptedImmutableType@3fd7a715
+16:51:36.164 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -&gt; org.hibernate.type.AdaptedImmutableType@711f39f9
+16:51:36.166 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -&gt; org.hibernate.type.AdaptedImmutableType@71bbf57e
+16:51:36.167 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -&gt; org.hibernate.type.AdaptedImmutableType@7f13d6e
+16:51:36.168 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -&gt; org.hibernate.type.AdaptedImmutableType@51cdd8a
+16:51:36.169 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -&gt; org.hibernate.type.AdaptedImmutableType@d44fc21
+16:51:36.170 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -&gt; org.hibernate.type.AdaptedImmutableType@23faf8f2
+16:51:36.264 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+16:51:36.293 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.2.1.Final}
+16:51:36.303 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+16:51:36.308 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+16:51:36.352 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -&gt; [org.hibernate.id.UUIDGenerator]
+16:51:36.354 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -&gt; [org.hibernate.id.GUIDGenerator]
+16:51:36.358 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -&gt; [org.hibernate.id.UUIDHexGenerator]
+16:51:36.359 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -&gt; [org.hibernate.id.UUIDHexGenerator]
+16:51:36.364 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [hilo] -&gt; [org.hibernate.id.TableHiLoGenerator]
+16:51:36.366 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -&gt; [org.hibernate.id.Assigned]
+16:51:36.372 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -&gt; [org.hibernate.id.IdentityGenerator]
+16:51:36.375 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -&gt; [org.hibernate.id.SelectGenerator]
+16:51:36.378 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -&gt; [org.hibernate.id.SequenceGenerator]
+16:51:36.380 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -&gt; [org.hibernate.id.SequenceHiLoGenerator]
+16:51:36.383 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -&gt; [org.hibernate.id.IncrementGenerator]
+16:51:36.385 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -&gt; [org.hibernate.id.ForeignGenerator]
+16:51:36.388 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -&gt; [org.hibernate.id.SequenceIdentityGenerator]
+16:51:36.395 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -&gt; [org.hibernate.id.enhanced.SequenceStyleGenerator]
+16:51:36.404 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -&gt; [org.hibernate.id.enhanced.TableGenerator]
+16:51:36.417 [main] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: /hibernate.cfg.xml
+16:51:36.417 [main] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: /hibernate.cfg.xml
+16:51:36.580 [main] DEBUG o.h.i.util.xml.DTDEntityResolver - Trying to resolve system-id [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+16:51:36.580 [main] DEBUG o.h.i.util.xml.DTDEntityResolver - Recognized hibernate namespace; attempting to resolve on classpath under org/hibernate/
+16:51:36.582 [main] DEBUG o.h.i.util.xml.DTDEntityResolver - Located [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd] in classpath
+16:51:36.640 [main] DEBUG org.hibernate.cfg.Configuration - hibernate.dialect=org.hibernate.dialect.Oracle10gDialect
+16:51:36.640 [main] DEBUG org.hibernate.cfg.Configuration - hibernate.default_schema=GROSSA
+16:51:36.641 [main] DEBUG org.hibernate.cfg.Configuration - hibernate.connection.username=GROSSA
+16:51:36.641 [main] DEBUG org.hibernate.cfg.Configuration - hibernate.connection.password=Wilmington
+16:51:36.642 [main] DEBUG org.hibernate.cfg.Configuration - hibernate.connection.url=jdbc:oracle:thin:@cisc181.ci3wacsy5j84.us-east-1.rds.amazonaws.com:1521:ORCL
+16:51:36.642 [main] DEBUG org.hibernate.cfg.Configuration - show_sql=true
+16:51:36.643 [main] DEBUG org.hibernate.cfg.Configuration - format_sql=true
+16:51:36.643 [main] DEBUG org.hibernate.cfg.Configuration - hibernate.hbm2ddl.auto=update
+16:51:36.644 [main] DEBUG org.hibernate.cfg.Configuration - Session-factory config [null] named resource [mapping/Rate.hbm.xml] for mapping
+16:51:36.644 [main] INFO  org.hibernate.cfg.Configuration - HHH000221: Reading mappings from resource: mapping/Rate.hbm.xml
+16:51:36.747 [main] DEBUG o.h.i.util.xml.DTDEntityResolver - Trying to resolve system-id [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd]
+16:51:36.750 [main] WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+16:51:36.750 [main] DEBUG o.h.i.util.xml.DTDEntityResolver - Attempting to resolve on classpath under org/hibernate/
+16:51:36.753 [main] DEBUG o.h.i.util.xml.DTDEntityResolver - Located [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd] in classpath
+16:51:36.845 [main] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+16:51:36.847 [main] DEBUG org.hibernate.cfg.Configuration - Properties: {hibernate.connection.password=Wilmington, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.default_schema=GROSSA, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_45\jre\bin, java.vm.version=25.45-b02, hibernate.connection.username=GROSSA, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=;, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.script=, user.country=US, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=, java.vm.specification.name=Java Virtual Machine Specification, user.dir=C:\Users\Andrew\git\FinalExamStarter_5\FirstBankMortgage_JavaFx, java.runtime.version=1.8.0_45-b15, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, basedir=C:\Users\Andrew\git\FinalExamStarter_5\FirstBankMortgage_JavaFx, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\endorsed, os.arch=amd64, surefire.real.class.path=C:\Users\Andrew\git\FinalExamStarter_5\FirstBankMortgage_JavaFx\target\surefire\surefirebooter2058689816615065424.jar, java.io.tmpdir=C:\Users\Andrew\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Windows 8.1, sun.jnu.encoding=Cp1252, java.library.path=C:\Program Files\Java\jdk1.8.0_45\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_66/bin/server;C:/Program Files/Java/jre1.8.0_66/bin;C:/Program Files/Java/jre1.8.0_66/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\MATLAB\R2015a\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\eclipse;;., surefire.test.class.path=C:\Users\Andrew\git\FinalExamStarter_5\FirstBankMortgage_JavaFx\target\test-classes;C:\Users\Andrew\git\FinalExamStarter_5\FirstBankMortgage_JavaFx\target\classes;C:\Users\Andrew\.m2\repository\org\springframework\spring-context\3.2.3.RELEASE\spring-context-3.2.3.RELEASE.jar;C:\Users\Andrew\.m2\repository\org\springframework\spring-aop\3.2.3.RELEASE\spring-aop-3.2.3.RELEASE.jar;C:\Users\Andrew\.m2\repository\org\springframework\spring-beans\3.2.3.RELEASE\spring-beans-3.2.3.RELEASE.jar;C:\Users\Andrew\.m2\repository\org\springframework\spring-core\3.2.3.RELEASE\spring-core-3.2.3.RELEASE.jar;C:\Users\Andrew\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\Andrew\.m2\repository\org\springframework\spring-expression\3.2.3.RELEASE\spring-expression-3.2.3.RELEASE.jar;C:\Users\Andrew\.m2\repository\org\springframework\spring-tx\3.2.3.RELEASE\spring-tx-3.2.3.RELEASE.jar;C:\Users\Andrew\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Andrew\.m2\repository\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar;C:\Users\Andrew\.m2\repository\ch\qos\logback\logback-classic\1.0.13\logback-classic-1.0.13.jar;C:\Users\Andrew\.m2\repository\ch\qos\logback\logback-core\1.0.13\logback-core-1.0.13.jar;C:\Users\Andrew\.m2\repository\org\hibernate\hibernate-entitymanager\4.2.1.Final\hibernate-entitymanager-4.2.1.Final.jar;C:\Users\Andrew\.m2\repository\org\jboss\logging\jboss-logging\3.1.0.GA\jboss-logging-3.1.0.GA.jar;C:\Users\Andrew\.m2\repository\org\hibernate\hibernate-core\4.2.1.Final\hibernate-core-4.2.1.Final.jar;C:\Users\Andrew\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Andrew\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\Andrew\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.1_spec\1.0.1.Final\jboss-transaction-api_1.1_spec-1.0.1.Final.jar;C:\Users\Andrew\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.0-api\1.0.1.Final\hibernate-jpa-2.0-api-1.0.1.Final.jar;C:\Users\Andrew\.m2\repository\org\javassist\javassist\3.15.0-GA\javassist-3.15.0-GA.jar;C:\Users\Andrew\.m2\repository\org\hibernate\common\hibernate-commons-annotations\4.0.1.Final\hibernate-commons-annotations-4.0.1.Final.jar;C:\Users\Andrew\.m2\repository\org\springframework\spring-test\3.2.3.RELEASE\spring-test-3.2.3.RELEASE.jar;C:\Users\Andrew\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Andrew\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Andrew\.m2\repository\org\springframework\samples\FirstBankMortgage_DAL\0.0.1-SNAPSHOT\FirstBankMortgage_DAL-0.0.1-SNAPSHOT.jar;C:\Users\Andrew\.m2\repository\org\apache\poi\poi\3.9\poi-3.9.jar;C:\Users\Andrew\.m2\repository\commons-codec\commons-codec\1.5\commons-codec-1.5.jar;C:\Users\Andrew\.m2\repository\com\oracle\ojdbc6\11.2.0.3\ojdbc6-11.2.0.3.jar;, java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=6.3, user.home=C:\Users\Andrew, user.timezone=America/New_York, java.awt.printerjob=sun.awt.windows.WPrinterJob, file.encoding=Cp1252, java.specification.version=1.8, hibernate.format_sql=true, show_sql=true, java.class.path=C:\Users\Andrew\git\FinalExamStarter_5\FirstBankMortgage_JavaFx\target\test-classes;C:\Users\Andrew\git\FinalExamStarter_5\FirstBankMortgage_JavaFx\target\classes;C:\Users\Andrew\.m2\repository\org\springframework\spring-context\3.2.3.RELEASE\spring-context-3.2.3.RELEASE.jar;C:\Users\Andrew\.m2\repository\org\springframework\spring-aop\3.2.3.RELEASE\spring-aop-3.2.3.RELEASE.jar;C:\Users\Andrew\.m2\repository\org\springframework\spring-beans\3.2.3.RELEASE\spring-beans-3.2.3.RELEASE.jar;C:\Users\Andrew\.m2\repository\org\springframework\spring-core\3.2.3.RELEASE\spring-core-3.2.3.RELEASE.jar;C:\Users\Andrew\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\Andrew\.m2\repository\org\springframework\spring-expression\3.2.3.RELEASE\spring-expression-3.2.3.RELEASE.jar;C:\Users\Andrew\.m2\repository\org\springframework\spring-tx\3.2.3.RELEASE\spring-tx-3.2.3.RELEASE.jar;C:\Users\Andrew\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Andrew\.m2\repository\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar;C:\Users\Andrew\.m2\repository\ch\qos\logback\logback-classic\1.0.13\logback-classic-1.0.13.jar;C:\Users\Andrew\.m2\repository\ch\qos\logback\logback-core\1.0.13\logback-core-1.0.13.jar;C:\Users\Andrew\.m2\repository\org\hibernate\hibernate-entitymanager\4.2.1.Final\hibernate-entitymanager-4.2.1.Final.jar;C:\Users\Andrew\.m2\repository\org\jboss\logging\jboss-logging\3.1.0.GA\jboss-logging-3.1.0.GA.jar;C:\Users\Andrew\.m2\repository\org\hibernate\hibernate-core\4.2.1.Final\hibernate-core-4.2.1.Final.jar;C:\Users\Andrew\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Andrew\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\Andrew\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.1_spec\1.0.1.Final\jboss-transaction-api_1.1_spec-1.0.1.Final.jar;C:\Users\Andrew\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.0-api\1.0.1.Final\hibernate-jpa-2.0-api-1.0.1.Final.jar;C:\Users\Andrew\.m2\repository\org\javassist\javassist\3.15.0-GA\javassist-3.15.0-GA.jar;C:\Users\Andrew\.m2\repository\org\hibernate\common\hibernate-commons-annotations\4.0.1.Final\hibernate-commons-annotations-4.0.1.Final.jar;C:\Users\Andrew\.m2\repository\org\springframework\spring-test\3.2.3.RELEASE\spring-test-3.2.3.RELEASE.jar;C:\Users\Andrew\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Andrew\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Andrew\.m2\repository\org\springframework\samples\FirstBankMortgage_DAL\0.0.1-SNAPSHOT\FirstBankMortgage_DAL-0.0.1-SNAPSHOT.jar;C:\Users\Andrew\.m2\repository\org\apache\poi\poi\3.9\poi-3.9.jar;C:\Users\Andrew\.m2\repository\commons-codec\commons-codec\1.5\commons-codec-1.5.jar;C:\Users\Andrew\.m2\repository\com\oracle\ojdbc6\11.2.0.3\ojdbc6-11.2.0.3.jar;, user.name=Andrew, format_sql=true, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, java.vm.specification.version=1.8, sun.java.command=C:\Users\Andrew\git\FinalExamStarter_5\FirstBankMortgage_JavaFx\target\surefire\surefirebooter2058689816615065424.jar C:\Users\Andrew\git\FinalExamStarter_5\FirstBankMortgage_JavaFx\target\surefire\surefire5286783140967208080tmp C:\Users\Andrew\git\FinalExamStarter_5\FirstBankMortgage_JavaFx\target\surefire\surefire_04164620573386911343tmp, java.home=C:\Program Files\Java\jdk1.8.0_45\jre, sun.arch.data.model=64, hibernate.connection.url=jdbc:oracle:thin:@cisc181.ci3wacsy5j84.us-east-1.rds.amazonaws.com:1521:ORCL, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, user.language=en, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.8.0_45, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_45\jre\classes, java.vendor=Oracle Corporation, localRepository=C:\Users\Andrew\.m2\repository, file.separator=\, hibernate.hbm2ddl.auto=update, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeLittle, sun.cpu.endian=little, sun.desktop=windows, sun.cpu.isalist=amd64}
+16:51:36.879 [main] DEBUG o.h.i.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+16:51:36.942 [main] DEBUG org.hibernate.cfg.Configuration - Preparing to build session factory with filters : {}
+16:51:37.002 [main] DEBUG org.hibernate.cfg.Configuration - Processing hbm.xml files
+16:51:37.227 [main] DEBUG org.hibernate.cfg.HbmBinder - Mapping class: domain.RateDomainModel -&gt; TBLRATE
+16:51:37.238 [main] DEBUG org.hibernate.cfg.HbmBinder - Mapped property: RateID -&gt; RATEID
+16:51:37.252 [main] DEBUG org.hibernate.cfg.HbmBinder - Mapped property: MinCreditScore -&gt; MINCREDITSCORE
+16:51:37.255 [main] DEBUG org.hibernate.cfg.HbmBinder - Mapped property: InterestRate -&gt; INTERESTRATE
+16:51:37.256 [main] DEBUG org.hibernate.cfg.Configuration - Process annotated classes
+16:51:37.260 [main] DEBUG org.hibernate.cfg.Configuration - Processing fk mappings (*ToOne and JoinedSubclass)
+16:51:37.262 [main] DEBUG org.hibernate.cfg.Configuration - Processing extends queue
+16:51:37.262 [main] DEBUG org.hibernate.cfg.Configuration - Processing extends queue
+16:51:37.262 [main] DEBUG org.hibernate.cfg.Configuration - Processing collection mappings
+16:51:37.262 [main] DEBUG org.hibernate.cfg.Configuration - Processing native query and ResultSetMapping mappings
+16:51:37.262 [main] DEBUG org.hibernate.cfg.Configuration - Processing association property references
+16:51:37.263 [main] DEBUG org.hibernate.cfg.Configuration - Creating tables&apos; unique integer identifiers
+16:51:37.263 [main] DEBUG org.hibernate.cfg.Configuration - Processing foreign key constraints
+16:51:37.300 [main] INFO  o.h.s.j.c.i.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+16:51:37.301 [main] WARN  o.h.s.j.c.i.DriverManagerConnectionProviderImpl - HHH000148: No JDBC Driver class was specified by property hibernate.connection.driver_class
+16:51:37.302 [main] INFO  o.h.s.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+16:51:37.302 [main] INFO  o.h.s.j.c.i.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+16:51:37.303 [main] INFO  o.h.s.j.c.i.DriverManagerConnectionProviderImpl - HHH000401: using driver [null] at URL [jdbc:oracle:thin:@cisc181.ci3wacsy5j84.us-east-1.rds.amazonaws.com:1521:ORCL]
+16:51:37.304 [main] INFO  o.h.s.j.c.i.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=GROSSA, password=Wilmington}
+16:51:37.362 [main] DEBUG o.h.s.j.c.i.DriverManagerConnectionProviderImpl - Opening new JDBC connection
+16:51:38.227 [main] DEBUG o.h.s.j.c.i.DriverManagerConnectionProviderImpl - Created connection to: jdbc:oracle:thin:@cisc181.ci3wacsy5j84.us-east-1.rds.amazonaws.com:1521:ORCL, Isolation Level: 2
+16:51:38.228 [main] DEBUG o.h.e.jdbc.internal.JdbcServicesImpl - Database -&gt;
+       name : Oracle
+    version : Oracle Database 11g Release 11.2.0.4.0 - 64bit Production
+      major : 11
+      minor : 2
+16:51:38.229 [main] DEBUG o.h.e.jdbc.internal.JdbcServicesImpl - Driver -&gt;
+       name : Oracle JDBC driver
+    version : 11.2.0.3.0
+      major : 11
+      minor : 2
+16:51:38.229 [main] DEBUG o.h.e.jdbc.internal.JdbcServicesImpl - JDBC version : 11.2
+16:51:38.486 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+16:51:38.572 [main] DEBUG org.hibernate.cfg.SettingsFactory - Automatic flush during beforeCompletion(): disabled
+16:51:38.572 [main] DEBUG org.hibernate.cfg.SettingsFactory - Automatic session close at end of transaction: disabled
+16:51:38.573 [main] DEBUG org.hibernate.cfg.SettingsFactory - JDBC batch size: 15
+16:51:38.573 [main] DEBUG org.hibernate.cfg.SettingsFactory - JDBC batch updates for versioned data: disabled
+16:51:38.573 [main] DEBUG org.hibernate.cfg.SettingsFactory - Scrollable result sets: enabled
+16:51:38.574 [main] DEBUG org.hibernate.cfg.SettingsFactory - Wrap result sets: disabled
+16:51:38.574 [main] DEBUG org.hibernate.cfg.SettingsFactory - JDBC3 getGeneratedKeys(): disabled
+16:51:38.574 [main] DEBUG org.hibernate.cfg.SettingsFactory - multi-tenancy strategy : NONE
+16:51:38.575 [main] DEBUG org.hibernate.cfg.SettingsFactory - Connection release mode: auto
+16:51:38.575 [main] INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+16:51:38.584 [main] DEBUG org.hibernate.cfg.SettingsFactory - Using BatchFetchStyle : LEGACY
+16:51:38.584 [main] DEBUG org.hibernate.cfg.SettingsFactory - Default schema: GROSSA
+16:51:38.584 [main] DEBUG org.hibernate.cfg.SettingsFactory - Default batch fetch size: 1
+16:51:38.585 [main] DEBUG org.hibernate.cfg.SettingsFactory - Generate SQL with comments: disabled
+16:51:38.585 [main] DEBUG org.hibernate.cfg.SettingsFactory - Order SQL updates by primary key: disabled
+16:51:38.585 [main] DEBUG org.hibernate.cfg.SettingsFactory - Order SQL inserts for batching: disabled
+16:51:38.586 [main] DEBUG org.hibernate.cfg.SettingsFactory - Default null ordering: none
+16:51:38.588 [main] DEBUG org.hibernate.cfg.SettingsFactory - Query translator: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory
+16:51:38.597 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+16:51:38.600 [main] DEBUG org.hibernate.cfg.SettingsFactory - Query language substitutions: {}
+16:51:38.600 [main] DEBUG org.hibernate.cfg.SettingsFactory - JPA-QL strict compliance: disabled
+16:51:38.601 [main] DEBUG org.hibernate.cfg.SettingsFactory - Second-level cache: enabled
+16:51:38.605 [main] DEBUG org.hibernate.cfg.SettingsFactory - Query cache: disabled
+16:51:38.606 [main] DEBUG org.hibernate.cfg.SettingsFactory - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+16:51:38.610 [main] DEBUG org.hibernate.cfg.SettingsFactory - org.hibernate.cache.internal.NoCachingRegionFactory did not provide constructor accepting java.util.Properties; attempting no-arg constructor.
+16:51:38.611 [main] DEBUG org.hibernate.cfg.SettingsFactory - Optimize cache for minimal puts: disabled
+16:51:38.611 [main] DEBUG org.hibernate.cfg.SettingsFactory - Structured second-level cache entries: disabled
+16:51:38.616 [main] DEBUG org.hibernate.cfg.SettingsFactory - Second-level cache direct-reference entries: disabled
+16:51:38.618 [main] DEBUG org.hibernate.cfg.SettingsFactory - Statistics: disabled
+16:51:38.618 [main] DEBUG org.hibernate.cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+16:51:38.619 [main] DEBUG org.hibernate.cfg.SettingsFactory - Default entity-mode: pojo
+16:51:38.619 [main] DEBUG org.hibernate.cfg.SettingsFactory - Named query checking : enabled
+16:51:38.620 [main] DEBUG org.hibernate.cfg.SettingsFactory - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+16:51:38.620 [main] DEBUG org.hibernate.cfg.SettingsFactory - Allow initialization of lazy state outside session : : disabled
+16:51:38.620 [main] DEBUG org.hibernate.cfg.SettingsFactory - JTA Track by Thread: enabled
+16:51:38.667 [main] DEBUG o.h.internal.SessionFactoryImpl - Building session factory
+16:51:38.706 [main] DEBUG o.h.internal.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+16:51:38.707 [main] DEBUG o.h.internal.SessionFactoryImpl - Instantiating session factory with properties: {java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.password=Wilmington, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_45\jre\bin, hibernate.default_schema=GROSSA, java.vm.version=25.45-b02, hibernate.connection.username=GROSSA, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=;, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.script=, user.country=US, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=, java.vm.specification.name=Java Virtual Machine Specification, user.dir=C:\Users\Andrew\git\FinalExamStarter_5\FirstBankMortgage_JavaFx, java.runtime.version=1.8.0_45-b15, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, basedir=C:\Users\Andrew\git\FinalExamStarter_5\FirstBankMortgage_JavaFx, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\endorsed, os.arch=amd64, surefire.real.class.path=C:\Users\Andrew\git\FinalExamStarter_5\FirstBankMortgage_JavaFx\target\surefire\surefirebooter2058689816615065424.jar, java.io.tmpdir=C:\Users\Andrew\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Windows 8.1, sun.jnu.encoding=Cp1252, java.library.path=C:\Program Files\Java\jdk1.8.0_45\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_66/bin/server;C:/Program Files/Java/jre1.8.0_66/bin;C:/Program Files/Java/jre1.8.0_66/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\MATLAB\R2015a\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\eclipse;;., surefire.test.class.path=C:\Users\Andrew\git\FinalExamStarter_5\FirstBankMortgage_JavaFx\target\test-classes;C:\Users\Andrew\git\FinalExamStarter_5\FirstBankMortgage_JavaFx\target\classes;C:\Users\Andrew\.m2\repository\org\springframework\spring-context\3.2.3.RELEASE\spring-context-3.2.3.RELEASE.jar;C:\Users\Andrew\.m2\repository\org\springframework\spring-aop\3.2.3.RELEASE\spring-aop-3.2.3.RELEASE.jar;C:\Users\Andrew\.m2\repository\org\springframework\spring-beans\3.2.3.RELEASE\spring-beans-3.2.3.RELEASE.jar;C:\Users\Andrew\.m2\repository\org\springframework\spring-core\3.2.3.RELEASE\spring-core-3.2.3.RELEASE.jar;C:\Users\Andrew\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\Andrew\.m2\repository\org\springframework\spring-expression\3.2.3.RELEASE\spring-expression-3.2.3.RELEASE.jar;C:\Users\Andrew\.m2\repository\org\springframework\spring-tx\3.2.3.RELEASE\spring-tx-3.2.3.RELEASE.jar;C:\Users\Andrew\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Andrew\.m2\repository\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar;C:\Users\Andrew\.m2\repository\ch\qos\logback\logback-classic\1.0.13\logback-classic-1.0.13.jar;C:\Users\Andrew\.m2\repository\ch\qos\logback\logback-core\1.0.13\logback-core-1.0.13.jar;C:\Users\Andrew\.m2\repository\org\hibernate\hibernate-entitymanager\4.2.1.Final\hibernate-entitymanager-4.2.1.Final.jar;C:\Users\Andrew\.m2\repository\org\jboss\logging\jboss-logging\3.1.0.GA\jboss-logging-3.1.0.GA.jar;C:\Users\Andrew\.m2\repository\org\hibernate\hibernate-core\4.2.1.Final\hibernate-core-4.2.1.Final.jar;C:\Users\Andrew\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Andrew\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\Andrew\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.1_spec\1.0.1.Final\jboss-transaction-api_1.1_spec-1.0.1.Final.jar;C:\Users\Andrew\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.0-api\1.0.1.Final\hibernate-jpa-2.0-api-1.0.1.Final.jar;C:\Users\Andrew\.m2\repository\org\javassist\javassist\3.15.0-GA\javassist-3.15.0-GA.jar;C:\Users\Andrew\.m2\repository\org\hibernate\common\hibernate-commons-annotations\4.0.1.Final\hibernate-commons-annotations-4.0.1.Final.jar;C:\Users\Andrew\.m2\repository\org\springframework\spring-test\3.2.3.RELEASE\spring-test-3.2.3.RELEASE.jar;C:\Users\Andrew\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Andrew\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Andrew\.m2\repository\org\springframework\samples\FirstBankMortgage_DAL\0.0.1-SNAPSHOT\FirstBankMortgage_DAL-0.0.1-SNAPSHOT.jar;C:\Users\Andrew\.m2\repository\org\apache\poi\poi\3.9\poi-3.9.jar;C:\Users\Andrew\.m2\repository\commons-codec\commons-codec\1.5\commons-codec-1.5.jar;C:\Users\Andrew\.m2\repository\com\oracle\ojdbc6\11.2.0.3\ojdbc6-11.2.0.3.jar;, java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=6.3, user.home=C:\Users\Andrew, user.timezone=America/New_York, java.awt.printerjob=sun.awt.windows.WPrinterJob, java.specification.version=1.8, file.encoding=Cp1252, hibernate.format_sql=true, show_sql=true, user.name=Andrew, java.class.path=C:\Users\Andrew\git\FinalExamStarter_5\FirstBankMortgage_JavaFx\target\test-classes;C:\Users\Andrew\git\FinalExamStarter_5\FirstBankMortgage_JavaFx\target\classes;C:\Users\Andrew\.m2\repository\org\springframework\spring-context\3.2.3.RELEASE\spring-context-3.2.3.RELEASE.jar;C:\Users\Andrew\.m2\repository\org\springframework\spring-aop\3.2.3.RELEASE\spring-aop-3.2.3.RELEASE.jar;C:\Users\Andrew\.m2\repository\org\springframework\spring-beans\3.2.3.RELEASE\spring-beans-3.2.3.RELEASE.jar;C:\Users\Andrew\.m2\repository\org\springframework\spring-core\3.2.3.RELEASE\spring-core-3.2.3.RELEASE.jar;C:\Users\Andrew\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\Andrew\.m2\repository\org\springframework\spring-expression\3.2.3.RELEASE\spring-expression-3.2.3.RELEASE.jar;C:\Users\Andrew\.m2\repository\org\springframework\spring-tx\3.2.3.RELEASE\spring-tx-3.2.3.RELEASE.jar;C:\Users\Andrew\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Andrew\.m2\repository\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar;C:\Users\Andrew\.m2\repository\ch\qos\logback\logback-classic\1.0.13\logback-classic-1.0.13.jar;C:\Users\Andrew\.m2\repository\ch\qos\logback\logback-core\1.0.13\logback-core-1.0.13.jar;C:\Users\Andrew\.m2\repository\org\hibernate\hibernate-entitymanager\4.2.1.Final\hibernate-entitymanager-4.2.1.Final.jar;C:\Users\Andrew\.m2\repository\org\jboss\logging\jboss-logging\3.1.0.GA\jboss-logging-3.1.0.GA.jar;C:\Users\Andrew\.m2\repository\org\hibernate\hibernate-core\4.2.1.Final\hibernate-core-4.2.1.Final.jar;C:\Users\Andrew\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Andrew\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\Andrew\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.1_spec\1.0.1.Final\jboss-transaction-api_1.1_spec-1.0.1.Final.jar;C:\Users\Andrew\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.0-api\1.0.1.Final\hibernate-jpa-2.0-api-1.0.1.Final.jar;C:\Users\Andrew\.m2\repository\org\javassist\javassist\3.15.0-GA\javassist-3.15.0-GA.jar;C:\Users\Andrew\.m2\repository\org\hibernate\common\hibernate-commons-annotations\4.0.1.Final\hibernate-commons-annotations-4.0.1.Final.jar;C:\Users\Andrew\.m2\repository\org\springframework\spring-test\3.2.3.RELEASE\spring-test-3.2.3.RELEASE.jar;C:\Users\Andrew\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Andrew\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Andrew\.m2\repository\org\springframework\samples\FirstBankMortgage_DAL\0.0.1-SNAPSHOT\FirstBankMortgage_DAL-0.0.1-SNAPSHOT.jar;C:\Users\Andrew\.m2\repository\org\apache\poi\poi\3.9\poi-3.9.jar;C:\Users\Andrew\.m2\repository\commons-codec\commons-codec\1.5\commons-codec-1.5.jar;C:\Users\Andrew\.m2\repository\com\oracle\ojdbc6\11.2.0.3\ojdbc6-11.2.0.3.jar;, hibernate.bytecode.use_reflection_optimizer=false, format_sql=true, hibernate.show_sql=true, java.vm.specification.version=1.8, sun.arch.data.model=64, java.home=C:\Program Files\Java\jdk1.8.0_45\jre, sun.java.command=C:\Users\Andrew\git\FinalExamStarter_5\FirstBankMortgage_JavaFx\target\surefire\surefirebooter2058689816615065424.jar C:\Users\Andrew\git\FinalExamStarter_5\FirstBankMortgage_JavaFx\target\surefire\surefire5286783140967208080tmp C:\Users\Andrew\git\FinalExamStarter_5\FirstBankMortgage_JavaFx\target\surefire\surefire_04164620573386911343tmp, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.connection.url=jdbc:oracle:thin:@cisc181.ci3wacsy5j84.us-east-1.rds.amazonaws.com:1521:ORCL, java.specification.vendor=Oracle Corporation, user.language=en, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.8.0_45, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_45\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_45\jre\classes, java.vendor=Oracle Corporation, localRepository=C:\Users\Andrew\.m2\repository, file.separator=\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, hibernate.hbm2ddl.auto=update, sun.cpu.endian=little, sun.io.unicode.encoding=UnicodeLittle, sun.desktop=windows, sun.cpu.isalist=amd64}
+16:51:38.813 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Setting dialect [org.hibernate.dialect.Oracle10gDialect]
+16:51:39.168 [main] DEBUG o.h.p.entity.AbstractEntityPersister - Static SQL for entity: domain.RateDomainModel
+16:51:39.168 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Version select: select RATEID from GROSSA.TBLRATE where RATEID =?
+16:51:39.168 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Snapshot select: select ratedomain_.RATEID, ratedomain_.MINCREDITSCORE as MINCREDI2_0_, ratedomain_.INTERESTRATE as INTEREST3_0_ from GROSSA.TBLRATE ratedomain_ where ratedomain_.RATEID=?
+16:51:39.169 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Insert 0: insert into GROSSA.TBLRATE (MINCREDITSCORE, INTERESTRATE, RATEID) values (?, ?, ?)
+16:51:39.169 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Update 0: update GROSSA.TBLRATE set MINCREDITSCORE=?, INTERESTRATE=? where RATEID=?
+16:51:39.169 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Delete 0: delete from GROSSA.TBLRATE where RATEID=?
+16:51:39.220 [main] DEBUG org.hibernate.loader.Loader - Static select for entity domain.RateDomainModel [NONE]: select ratedomain0_.RATEID as RATEID1_0_0_, ratedomain0_.MINCREDITSCORE as MINCREDI2_0_0_, ratedomain0_.INTERESTRATE as INTEREST3_0_0_ from GROSSA.TBLRATE ratedomain0_ where ratedomain0_.RATEID=?
+16:51:39.221 [main] DEBUG org.hibernate.loader.Loader - Static select for entity domain.RateDomainModel [READ]: select ratedomain0_.RATEID as RATEID1_0_0_, ratedomain0_.MINCREDITSCORE as MINCREDI2_0_0_, ratedomain0_.INTERESTRATE as INTEREST3_0_0_ from GROSSA.TBLRATE ratedomain0_ where ratedomain0_.RATEID=?
+16:51:39.221 [main] DEBUG org.hibernate.loader.Loader - Static select for entity domain.RateDomainModel [UPGRADE]: select ratedomain0_.RATEID as RATEID1_0_0_, ratedomain0_.MINCREDITSCORE as MINCREDI2_0_0_, ratedomain0_.INTERESTRATE as INTEREST3_0_0_ from GROSSA.TBLRATE ratedomain0_ where ratedomain0_.RATEID=? for update
+16:51:39.222 [main] DEBUG org.hibernate.loader.Loader - Static select for entity domain.RateDomainModel [UPGRADE_NOWAIT]: select ratedomain0_.RATEID as RATEID1_0_0_, ratedomain0_.MINCREDITSCORE as MINCREDI2_0_0_, ratedomain0_.INTERESTRATE as INTEREST3_0_0_ from GROSSA.TBLRATE ratedomain0_ where ratedomain0_.RATEID=? for update nowait
+16:51:39.223 [main] DEBUG org.hibernate.loader.Loader - Static select for entity domain.RateDomainModel [FORCE]: select ratedomain0_.RATEID as RATEID1_0_0_, ratedomain0_.MINCREDITSCORE as MINCREDI2_0_0_, ratedomain0_.INTERESTRATE as INTEREST3_0_0_ from GROSSA.TBLRATE ratedomain0_ where ratedomain0_.RATEID=? for update nowait
+16:51:39.224 [main] DEBUG org.hibernate.loader.Loader - Static select for entity domain.RateDomainModel [PESSIMISTIC_READ]: select ratedomain0_.RATEID as RATEID1_0_0_, ratedomain0_.MINCREDITSCORE as MINCREDI2_0_0_, ratedomain0_.INTERESTRATE as INTEREST3_0_0_ from GROSSA.TBLRATE ratedomain0_ where ratedomain0_.RATEID=? for update
+16:51:39.224 [main] DEBUG org.hibernate.loader.Loader - Static select for entity domain.RateDomainModel [PESSIMISTIC_WRITE]: select ratedomain0_.RATEID as RATEID1_0_0_, ratedomain0_.MINCREDITSCORE as MINCREDI2_0_0_, ratedomain0_.INTERESTRATE as INTEREST3_0_0_ from GROSSA.TBLRATE ratedomain0_ where ratedomain0_.RATEID=? for update
+16:51:39.225 [main] DEBUG org.hibernate.loader.Loader - Static select for entity domain.RateDomainModel [PESSIMISTIC_FORCE_INCREMENT]: select ratedomain0_.RATEID as RATEID1_0_0_, ratedomain0_.MINCREDITSCORE as MINCREDI2_0_0_, ratedomain0_.INTERESTRATE as INTEREST3_0_0_ from GROSSA.TBLRATE ratedomain0_ where ratedomain0_.RATEID=? for update nowait
+16:51:39.226 [main] DEBUG org.hibernate.loader.Loader - Static select for entity domain.RateDomainModel [OPTIMISTIC]: select ratedomain0_.RATEID as RATEID1_0_0_, ratedomain0_.MINCREDITSCORE as MINCREDI2_0_0_, ratedomain0_.INTERESTRATE as INTEREST3_0_0_ from GROSSA.TBLRATE ratedomain0_ where ratedomain0_.RATEID=?
+16:51:39.226 [main] DEBUG org.hibernate.loader.Loader - Static select for entity domain.RateDomainModel [OPTIMISTIC_FORCE_INCREMENT]: select ratedomain0_.RATEID as RATEID1_0_0_, ratedomain0_.MINCREDITSCORE as MINCREDI2_0_0_, ratedomain0_.INTERESTRATE as INTEREST3_0_0_ from GROSSA.TBLRATE ratedomain0_ where ratedomain0_.RATEID=?
+16:51:39.243 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity domain.RateDomainModel: select ratedomain0_.RATEID as RATEID1_0_0_, ratedomain0_.MINCREDITSCORE as MINCREDI2_0_0_, ratedomain0_.INTERESTRATE as INTEREST3_0_0_ from GROSSA.TBLRATE ratedomain0_ where ratedomain0_.RATEID=?
+16:51:39.244 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity domain.RateDomainModel: select ratedomain0_.RATEID as RATEID1_0_0_, ratedomain0_.MINCREDITSCORE as MINCREDI2_0_0_, ratedomain0_.INTERESTRATE as INTEREST3_0_0_ from GROSSA.TBLRATE ratedomain0_ where ratedomain0_.RATEID=?
+16:51:39.250 [main] DEBUG o.h.internal.SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@d23e042
+16:51:39.256 [main] DEBUG o.h.internal.SessionFactoryRegistry - Registering SessionFactory: 490b141c-5bf6-4bb7-9ddd-5717be62d732 (&lt;unnamed&gt;)
+16:51:39.256 [main] DEBUG o.h.internal.SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+16:51:39.256 [main] DEBUG o.h.internal.SessionFactoryImpl - Instantiated session factory
+16:51:39.271 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+16:51:39.273 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+16:51:39.477 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+16:51:39.478 [main] DEBUG org.hibernate.cfg.Configuration - Processing hbm.xml files
+16:51:39.478 [main] DEBUG org.hibernate.cfg.Configuration - Process annotated classes
+16:51:39.478 [main] DEBUG org.hibernate.cfg.Configuration - Processing fk mappings (*ToOne and JoinedSubclass)
+16:51:39.478 [main] DEBUG org.hibernate.cfg.Configuration - Processing extends queue
+16:51:39.478 [main] DEBUG org.hibernate.cfg.Configuration - Processing extends queue
+16:51:39.478 [main] DEBUG org.hibernate.cfg.Configuration - Processing collection mappings
+16:51:39.478 [main] DEBUG org.hibernate.cfg.Configuration - Processing native query and ResultSetMapping mappings
+16:51:39.478 [main] DEBUG org.hibernate.cfg.Configuration - Processing association property references
+16:51:39.478 [main] DEBUG org.hibernate.cfg.Configuration - Creating tables&apos; unique integer identifiers
+16:51:39.479 [main] DEBUG org.hibernate.cfg.Configuration - Processing foreign key constraints
+16:51:39.696 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: GROSSA.TBLRATE
+16:51:39.697 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [interestrate, mincreditscore, rateid]
+16:51:39.697 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+16:51:39.697 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [tblrate_pk]
+16:51:39.698 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Setting dialect [org.hibernate.dialect.Oracle10gDialect]
+16:51:39.700 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+16:51:39.700 [main] DEBUG o.h.internal.SessionFactoryImpl - Checking 0 named HQL queries
+16:51:39.700 [main] DEBUG o.h.internal.SessionFactoryImpl - Checking 0 named SQL queries
+16:51:39.718 [main] DEBUG o.h.s.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+16:51:39.845 [main] DEBUG o.h.e.t.spi.AbstractTransactionImpl - begin
+16:51:39.846 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtaining JDBC connection
+16:51:39.846 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtained JDBC connection
+16:51:39.847 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - initial autocommit status: false
+16:51:39.951 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - parse() - HQL: FROM domain.RateDomainModel
+16:51:39.973 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: &apos;query&apos;
+    \-[SELECT_FROM] Node: &apos;SELECT_FROM&apos;
+       \-[FROM] Node: &apos;FROM&apos;
+          \-[RANGE] Node: &apos;RANGE&apos;
+             \-[DOT] Node: &apos;.&apos;
+                +-[IDENT] Node: &apos;domain&apos;
+                \-[IDENT] Node: &apos;RateDomainModel&apos;
+
+16:51:39.976 [main] DEBUG o.h.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+16:51:40.186 [main] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select &lt;&lt; begin [level=1, statement=select]
+16:51:40.247 [main] DEBUG o.h.h.internal.ast.tree.FromElement - FromClause{level=1} : domain.RateDomainModel (&lt;no alias&gt;) -&gt; ratedomain0_
+16:51:40.248 [main] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+16:51:40.249 [main] DEBUG o.h.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( FromClause{level=1} GROSSA.TBLRATE ratedomain0_ ) )
+16:51:40.263 [main] DEBUG o.h.hql.internal.ast.HqlSqlWalker - Derived SELECT clause created.
+16:51:40.279 [main] DEBUG o.h.h.i.ast.util.JoinProcessor - Using FROM fragment [GROSSA.TBLRATE ratedomain0_]
+16:51:40.279 [main] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select &gt;&gt; end [level=1, statement=select]
+16:51:40.281 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: &apos;SELECT&apos;  querySpaces (GROSSA.TBLRATE)
+    +-[SELECT_CLAUSE] SelectClause: &apos;{derived select clause}&apos;
+    |  +-[SELECT_EXPR] SelectExpressionImpl: &apos;ratedomain0_.RATEID as RATEID1_0_&apos; {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=GROSSA.TBLRATE,tableAlias=ratedomain0_,origin=null,columns={,className=domain.RateDomainModel}}}
+    |  \-[SQL_TOKEN] SqlFragment: &apos;ratedomain0_.MINCREDITSCORE as MINCREDI2_0_, ratedomain0_.INTERESTRATE as INTEREST3_0_&apos;
+    \-[FROM] FromClause: &apos;FROM&apos; FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[ratedomain0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: &apos;GROSSA.TBLRATE ratedomain0_&apos; FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=GROSSA.TBLRATE,tableAlias=ratedomain0_,origin=null,columns={,className=domain.RateDomainModel}}
+
+16:51:40.281 [main] DEBUG o.h.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+16:51:40.300 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - HQL: FROM domain.RateDomainModel
+16:51:40.300 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - SQL: select ratedomain0_.RATEID as RATEID1_0_, ratedomain0_.MINCREDITSCORE as MINCREDI2_0_, ratedomain0_.INTERESTRATE as INTEREST3_0_ from GROSSA.TBLRATE ratedomain0_
+16:51:40.301 [main] DEBUG o.h.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+16:51:40.422 [main] DEBUG org.hibernate.SQL - 
+    select
+        ratedomain0_.RATEID as RATEID1_0_,
+        ratedomain0_.MINCREDITSCORE as MINCREDI2_0_,
+        ratedomain0_.INTERESTRATE as INTEREST3_0_ 
+    from
+        GROSSA.TBLRATE ratedomain0_
+Hibernate: 
+    select
+        ratedomain0_.RATEID as RATEID1_0_,
+        ratedomain0_.MINCREDITSCORE as MINCREDI2_0_,
+        ratedomain0_.INTERESTRATE as INTEREST3_0_ 
+    from
+        GROSSA.TBLRATE ratedomain0_
+16:51:40.438 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+16:51:40.445 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[domain.RateDomainModel#1]
+16:51:40.461 [main] DEBUG org.hibernate.loader.Loader - Result set row: 1
+16:51:40.461 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[domain.RateDomainModel#2]
+16:51:40.462 [main] DEBUG org.hibernate.loader.Loader - Result set row: 2
+16:51:40.462 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[domain.RateDomainModel#3]
+16:51:40.463 [main] DEBUG org.hibernate.loader.Loader - Result set row: 3
+16:51:40.463 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[domain.RateDomainModel#4]
+16:51:40.464 [main] DEBUG org.hibernate.loader.Loader - Result set row: 4
+16:51:40.464 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[domain.RateDomainModel#5]
+16:51:40.468 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [domain.RateDomainModel#1]
+16:51:40.474 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [domain.RateDomainModel#1]
+16:51:40.474 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [domain.RateDomainModel#2]
+16:51:40.475 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [domain.RateDomainModel#2]
+16:51:40.475 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [domain.RateDomainModel#3]
+16:51:40.476 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [domain.RateDomainModel#3]
+16:51:40.476 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [domain.RateDomainModel#4]
+16:51:40.476 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [domain.RateDomainModel#4]
+16:51:40.477 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [domain.RateDomainModel#5]
+16:51:40.477 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [domain.RateDomainModel#5]
+16:51:40.485 [main] DEBUG o.h.e.t.spi.AbstractTransactionImpl - committing
+16:51:40.487 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+16:51:40.493 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+16:51:40.501 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 5 objects
+16:51:40.501 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+16:51:40.506 [main] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+16:51:40.508 [main] DEBUG o.h.internal.util.EntityPrinter - domain.RateDomainModel{RateID=4, MinCreditScore=750, InterestRate=3.75}
+16:51:40.509 [main] DEBUG o.h.internal.util.EntityPrinter - domain.RateDomainModel{RateID=5, MinCreditScore=800, InterestRate=3.5}
+16:51:40.511 [main] DEBUG o.h.internal.util.EntityPrinter - domain.RateDomainModel{RateID=2, MinCreditScore=650, InterestRate=4.5}
+16:51:40.511 [main] DEBUG o.h.internal.util.EntityPrinter - domain.RateDomainModel{RateID=3, MinCreditScore=700, InterestRate=4.0}
+16:51:40.512 [main] DEBUG o.h.internal.util.EntityPrinter - domain.RateDomainModel{RateID=1, MinCreditScore=600, InterestRate=5.0}
+16:51:40.522 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - committed JDBC Connection
+</system-out>
+  </testcase>
+  <testcase classname="UnitTests.RateBLL_Test" name="costTooHigh_Test" time="0.173">
+    <error message="org.hibernate.Session.close()V" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: org.hibernate.Session.close()V
+	at base.RateDAL.getRateDomainModel(RateDAL.java:43)
+	at base.RateDAL.getRate(RateDAL.java:55)
+	at ch.makery.address.model.Rate.getPayment(Rate.java:28)
+	at UnitTests.RateBLL_Test.costTooHigh_Test(RateBLL_Test.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>16:51:40.564 [main] DEBUG o.h.e.t.spi.AbstractTransactionImpl - begin
+16:51:40.564 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtaining JDBC connection
+16:51:40.564 [main] DEBUG o.h.s.j.c.i.DriverManagerConnectionProviderImpl - Opening new JDBC connection
+16:51:40.670 [main] DEBUG o.h.s.j.c.i.DriverManagerConnectionProviderImpl - Created connection to: jdbc:oracle:thin:@cisc181.ci3wacsy5j84.us-east-1.rds.amazonaws.com:1521:ORCL, Isolation Level: 2
+16:51:40.671 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtained JDBC connection
+16:51:40.671 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - initial autocommit status: false
+16:51:40.671 [main] DEBUG org.hibernate.SQL - 
+    select
+        ratedomain0_.RATEID as RATEID1_0_,
+        ratedomain0_.MINCREDITSCORE as MINCREDI2_0_,
+        ratedomain0_.INTERESTRATE as INTEREST3_0_ 
+    from
+        GROSSA.TBLRATE ratedomain0_
+Hibernate: 
+    select
+        ratedomain0_.RATEID as RATEID1_0_,
+        ratedomain0_.MINCREDITSCORE as MINCREDI2_0_,
+        ratedomain0_.INTERESTRATE as INTEREST3_0_ 
+    from
+        GROSSA.TBLRATE ratedomain0_
+16:51:40.681 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+16:51:40.682 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[domain.RateDomainModel#1]
+16:51:40.683 [main] DEBUG org.hibernate.loader.Loader - Result set row: 1
+16:51:40.683 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[domain.RateDomainModel#2]
+16:51:40.683 [main] DEBUG org.hibernate.loader.Loader - Result set row: 2
+16:51:40.684 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[domain.RateDomainModel#3]
+16:51:40.684 [main] DEBUG org.hibernate.loader.Loader - Result set row: 3
+16:51:40.685 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[domain.RateDomainModel#4]
+16:51:40.685 [main] DEBUG org.hibernate.loader.Loader - Result set row: 4
+16:51:40.686 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[domain.RateDomainModel#5]
+16:51:40.686 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [domain.RateDomainModel#1]
+16:51:40.686 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [domain.RateDomainModel#1]
+16:51:40.687 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [domain.RateDomainModel#2]
+16:51:40.687 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [domain.RateDomainModel#2]
+16:51:40.687 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [domain.RateDomainModel#3]
+16:51:40.688 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [domain.RateDomainModel#3]
+16:51:40.688 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [domain.RateDomainModel#4]
+16:51:40.688 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [domain.RateDomainModel#4]
+16:51:40.688 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [domain.RateDomainModel#5]
+16:51:40.691 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [domain.RateDomainModel#5]
+16:51:40.692 [main] DEBUG o.h.e.t.spi.AbstractTransactionImpl - committing
+16:51:40.693 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+16:51:40.694 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+16:51:40.695 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 5 objects
+16:51:40.696 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+16:51:40.696 [main] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+16:51:40.705 [main] DEBUG o.h.internal.util.EntityPrinter - domain.RateDomainModel{RateID=4, MinCreditScore=750, InterestRate=3.75}
+16:51:40.705 [main] DEBUG o.h.internal.util.EntityPrinter - domain.RateDomainModel{RateID=5, MinCreditScore=800, InterestRate=3.5}
+16:51:40.706 [main] DEBUG o.h.internal.util.EntityPrinter - domain.RateDomainModel{RateID=2, MinCreditScore=650, InterestRate=4.5}
+16:51:40.706 [main] DEBUG o.h.internal.util.EntityPrinter - domain.RateDomainModel{RateID=3, MinCreditScore=700, InterestRate=4.0}
+16:51:40.706 [main] DEBUG o.h.internal.util.EntityPrinter - domain.RateDomainModel{RateID=1, MinCreditScore=600, InterestRate=5.0}
+16:51:40.716 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - committed JDBC Connection
+</system-out>
+  </testcase>
+</testsuite>
